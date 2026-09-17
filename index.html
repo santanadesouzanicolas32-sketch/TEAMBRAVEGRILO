@@ -11,8 +11,6 @@
 <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVOSURBVFhH7ZZZTFRnFMcPM+wICpRCByrLgDql7OqwlMWCxYIbywB1xAFkcQaZewsTyyKijAhYUAsxA1JKUGJqUmq1ts0QYlOXuoRYE0uTNrUxfWgf+laTJtbm/JtrMDGXNmXQvvlL/g/35ju/c/Ld795coucsjiVGo7GywWweq6+v/0QQhBGTyaQnIjf5wmdOdXX1RkEQ7hYWFSEuLg5qtRrx8fEoLi6GKIqzBoMhS17zzBAEYYfBYEBgYCCIaF5CQkJQWVX1l9ls3iivfWqMjY2ppXo9yNl5XuMn4+zhAb3B8MdOQdDIHYunocGttrr6hyAfH3gQ8RIi/FvciTg0IADGurprcs2iqRfFBltiItqJ+BgRjxBhnAgTczlFhDEithGhj4jbiHA8PR01ra1FcpfjDA+7HCopuXtMqYTUXGp0hgiTRDhPhE+JcI4IHxHhNBFGiFgaYtDTE1ZDxddyncOUtrVlDWq1sBI9GuB9IrYnJuDGW2V8NTsbFzUaXMpIx1eZGXw2KAhDRNxPxNL6vsxMzu3tXSl3OkRLTU2PLTgYXUQYJOIPiHhKo8H3XVbcKt+O2zXV+HniFH67comnU5IxTMRHifiA9BgiI2ERxQa50yF6dLqLNldXHJaERDxBxOfc3XEzOxuzlZX4pqgQ39XVYraulqeWL4c0oLRTPdKZWLoUB8vLT8udC2ZmZsalNDf3XhQRVi9bhsygII5VKpGrUiGGCPFOTkggQtxcoomg9fbG+tBQjvXy4hUKBbZt3nxT7l0wo6OjAdq0tN+l97veYuGh8XFusVp57MwZLqmoQGxyMqz9/QiPjsa6/HzO1+n42PAw9w4McFxyMkt1r+fk/ARAKXcviO7u7rCkpKSHkqilpYUvXLjAo6OjbLPZWPoi5uXlYWxsjF/RaGAymri0tJQHBwe5ta3tUXMpGRkZv9rtdi+5e0FYrdbwxwOIoshW60Gempri69dvcFpaGjr2dWBycpIjIiLQ19fHFouFpUH1ej27u7s/HuCXmZkZT7l7QZw8efLFlBTtfUm0Y7uO21sbuf9wJ+vLtrCweydXlOvwWko8VkSoULgll1PXxqKmahufsB3lvNysR7uwPif7RwAKuXtBSIdw/Zsl98gzBuSdCGf/VCbXBCZKAHmlglzWgFxWg7xfAykSQS5JIB8tFL7J7OSdwEqfOGwtLL8q9zqErrx52k3dDgq1MoUeYT/tOItd13jTLjtvMU1DJ1zEztbLXGye5o277Oy0aogpop8ppJ19oztQXt08Inc6RJ3x7f3BiW2glyxMIZ0clGLjoVM3uKP/S961187a4g9R0nCee45f5vp9dlZG9TGF7WcKMGNlaiuamswGudMhDjRXrNFu2AvyF0DhB5gi32UKOwLftSewoeoscgwfIzp/AhQ5yErNAJyiepnC2pn8dyNr0zt/nugpCJE7HQIgp1JD8x3n0GZQ6D4mdS/T8n6Erhvnz+yzfO7zb7lr8Ao7v2pjijgCUnczvdzCS1Y0o7Km5Qu5b1Hsaao3rN7QBfJvYlIfYorqh1IzwMuShuC3ZhhLk4ZYseo9psjDTBGdTH4C0jd3oqO55g25a1GggxS1deZbvi+oQUo/kGsAyCUApJiLcu5auq/wRaBKA+NucVrueSr27qmPKd9e9sDNVTHvN+zJeLgpYdix7X6bpUEtdzw1giBsraiofKhSqeY1lqIKVqGisvKBxWJ5Nlv/T9TW1maIoninoKAAMTExCA8PR2xcHKTf9MbGxttGozFVXvN/4Go2m8sEQRg2mUyTZlEcEgRBR0TO8oXPec5/8TdaBpTt44zLbQAAAABJRU5ErkJggg=="/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -84,14 +82,12 @@ body::after{width:clamp(260px,55vw,460px);height:clamp(260px,55vw,460px);backgro
 
 /* VIDEOS */
 .vids-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(8px,2vw,12px);margin-bottom:clamp(20px,5vw,28px)}
-.vcw{padding:2px;border-radius:18px;background:var(--grad)}
+.vcw{padding:2px;border-radius:18px;background:var(--grad);display:flex;flex-direction:column}
 .vc{position:relative;border-radius:16px;overflow:hidden;height:clamp(200px,55vw,280px);background:var(--s1)}
-.vc video{width:100%;height:100%;object-fit:cover;display:block}
-.vc-overlay{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding:0 clamp(6px,1.5vw,10px) clamp(10px,2.5vw,14px);background:linear-gradient(transparent 35%,rgba(0,0,0,.75))}
-.vc-play{width:clamp(32px,8vw,38px);height:clamp(32px,8vw,38px);border-radius:50%;background:rgba(255,255,255,.18);backdrop-filter:blur(6px);border:1.5px solid rgba(255,255,255,.35);display:flex;align-items:center;justify-content:center;margin-bottom:8px;transition:transform .2s,background .2s}
-.vc:hover .vc-play{transform:scale(1.12);background:rgba(255,255,255,.28)}
-.vc-label{font-size:clamp(0.6rem,1.5vw,0.68rem);font-weight:700;color:#fff;letter-spacing:.6px;text-align:center;text-shadow:0 1px 4px rgba(0,0,0,.6);line-height:1.3}
-.vc-tag{font-size:clamp(0.52rem,1.2vw,0.58rem);font-weight:500;color:rgba(255,255,255,.7);letter-spacing:.4px;margin-top:2px}
+.vc video{width:100%;height:100%;object-fit:cover;display:block;pointer-events:none}
+.vc-caption{display:flex;flex-direction:column;align-items:center;text-align:center;gap:2px;padding:clamp(8px,2vw,10px) 4px 2px;background:var(--card);border-radius:0 0 16px 16px;transition:background .4s}
+.vc-label{font-size:clamp(0.6rem,1.5vw,0.68rem);font-weight:700;color:var(--w);letter-spacing:.6px;line-height:1.3;transition:color .4s}
+.vc-tag{font-size:clamp(0.52rem,1.2vw,0.58rem);font-weight:500;color:var(--m);letter-spacing:.4px}
 
 /* GALLERY */
 .gallery{display:flex;gap:clamp(7px,1.8vw,10px);overflow-x:auto;padding-bottom:6px;margin-bottom:clamp(20px,5vw,28px);scrollbar-width:none;-ms-overflow-style:none}
@@ -296,9 +292,6 @@ body::after{animation:arenaLight2 9s ease-in-out infinite}
 /* LIVE DOT ARENA PULSE */
 @keyframes arenaPulse{0%,100%{box-shadow:0 0 0 0 rgba(26,194,82,.6),0 0 0 0 rgba(77,184,255,.3)}50%{box-shadow:0 0 0 5px rgba(26,194,82,0),0 0 8px 3px rgba(77,184,255,.15)}}
 .ldot{animation:arenaPulse 2s infinite}
-/* GSAP init states */
-.g-fade{opacity:0;transform:translateY(24px)}
-.g-scale{opacity:0;transform:scale(.92)}
 
 /* DEV FOOTER: credito, logo e redes da NS Solutions */
 .site-footer{padding:32px 20px 28px;text-align:center;border-top:1px solid rgba(255,255,255,.08)}
@@ -338,8 +331,8 @@ body::after{animation:arenaLight2 9s ease-in-out infinite}
     </div>
   </div>
   <div class="stats" id="statsRow">
-    <div class="stat"><span class="stat-n" data-target="9">0</span><span class="stat-l">Anos</span></div>
-    <div class="stat"><span class="stat-n" data-target="37">0</span><span class="stat-l">Competi&ccedil;&otilde;es</span></div>
+    <div class="stat"><span class="stat-n">9+</span><span class="stat-l">Anos</span></div>
+    <div class="stat"><span class="stat-n">37+</span><span class="stat-l">Competi&ccedil;&otilde;es</span></div>
     <div class="stat"><span class="stat-n">5</span><span class="stat-l">Modalidades</span></div>
   </div>
   <div class="body">
@@ -359,8 +352,14 @@ body::after{animation:arenaLight2 9s ease-in-out infinite}
     <div class="g-fade">
       <div class="sh"><div class="sh-line"></div><span class="sh-label">V&iacute;deos</span><div class="sh-line"></div></div>
       <div class="vids-grid">
-        <div class="vcw"><div class="vc"><video autoplay muted loop playsinline preload="none" poster="poster1.webp" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><source src="grilo1_opt.mp4" type="video/mp4"/></video><div class="vc-overlay"><div class="vc-play"><svg width="13" height="13" fill="#fff" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div><span class="vc-label">Muay Thai, Boxe &amp; MMA</span><span class="vc-tag">Coach Vinicius</span></div></div></div>
-        <div class="vcw"><div class="vc"><video autoplay muted loop playsinline preload="none" poster="poster2.webp" style="width:100%;height:100%;object-fit:cover;display:block"><source src="grilo2_opt.mp4" type="video/mp4"/></video><div class="vc-overlay"><div class="vc-play"><svg width="13" height="13" fill="#fff" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div><span class="vc-label">CT-OZ Team Brave</span><span class="vc-tag">Exibi&ccedil;&atilde;o</span></div></div></div>
+        <div class="vcw">
+          <div class="vc"><video autoplay muted loop playsinline preload="none" poster="poster1.webp"><source src="grilo1_opt.mp4" type="video/mp4"/></video></div>
+          <div class="vc-caption"><span class="vc-label">Muay Thai, Boxe &amp; MMA</span><span class="vc-tag">Coach Vinicius</span></div>
+        </div>
+        <div class="vcw">
+          <div class="vc"><video autoplay muted loop playsinline preload="none" poster="poster2.webp"><source src="grilo2_opt.mp4" type="video/mp4"/></video></div>
+          <div class="vc-caption"><span class="vc-label">CT-OZ Team Brave</span><span class="vc-tag">Exibi&ccedil;&atilde;o</span></div>
+        </div>
       </div>
     </div>
     <div class="div"></div>
@@ -487,68 +486,6 @@ body::after{animation:arenaLight2 9s ease-in-out infinite}
 </div></div>
 
 <script>
-window.addEventListener('load',function(){
-  if(typeof gsap==='undefined'){document.querySelectorAll('.g-fade,.g-scale').forEach(function(el){el.style.opacity=1;el.style.transform='none';});return;}
-  gsap.registerPlugin(ScrollTrigger);
-
-  /* === HERO ENTRANCE === */
-  var tl=gsap.timeline({defaults:{ease:'expo.out'}});
-  tl.to('#heroAv',{opacity:1,scale:1,duration:.9,delay:.05,ease:'back.out(1.3)'})
-    .to('.av-ring',{opacity:1,duration:.4},'-=.5')
-    .to('#heroName',{opacity:1,y:0,duration:.7,ease:'power4.out'},'-=.45')
-    .to('#heroRole',{opacity:1,y:0,duration:.55,ease:'power3.out'},'-=.35')
-    .to('#heroSocs',{opacity:1,y:0,duration:.45,ease:'power3.out'},'-=.25')
-    .from('.hero-cover',{opacity:0,scale:1.08,duration:1.1,ease:'power2.out'},0);
-
-  /* === STATS COUNTER === */
-  ScrollTrigger.create({trigger:'#statsRow',start:'top 85%',once:true,onEnter:function(){
-    gsap.from('#statsRow .stat',{opacity:0,y:22,scaleY:.8,duration:.55,stagger:.12,ease:'back.out(1.5)',transformOrigin:'bottom'});
-    document.querySelectorAll('#statsRow [data-target]').forEach(function(el){
-      var t=+el.dataset.target,obj={v:0};
-      gsap.to(obj,{v:t,duration:1.8,delay:.2,ease:'power3.out',onUpdate:function(){el.textContent=Math.floor(obj.v)+'+';},onComplete:function(){el.textContent=t+'+';gsap.to(el,{scale:1.12,duration:.12,yoyo:true,repeat:1,ease:'power2.inOut'});}});
-    });
-  }});
-
-  /* === SCROLL FADES === */
-  document.querySelectorAll('.g-fade').forEach(function(el){
-    gsap.to(el,{opacity:1,y:0,duration:.7,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 89%',once:true}});
-  });
-
-  /* === PILLS BURST === */
-  ScrollTrigger.create({trigger:'.pills',start:'top 91%',once:true,onEnter:function(){
-    gsap.from('.pill',{opacity:0,scale:.7,rotation:function(i){return(i%2===0)?-6:6;},duration:.4,stagger:.06,ease:'back.out(1.8)'});
-  }});
-
-  /* === MODALIDADES SLIDE IN === */
-  ScrollTrigger.create({trigger:'.mods-list',start:'top 89%',once:true,onEnter:function(){
-    gsap.from('.mods-item',{opacity:0,x:-28,duration:.5,stagger:.08,ease:'power3.out'});
-  }});
-
-  /* === AULAS CARDS FLIP === */
-  ScrollTrigger.create({trigger:'.mod-grid',start:'top 91%',once:true,onEnter:function(){
-    gsap.from('.mod-card',{opacity:0,y:20,rotateX:12,duration:.5,stagger:.12,ease:'back.out(1.4)',transformOrigin:'top center'});
-  }});
-
-  /* === WHY CARDS === */
-  ScrollTrigger.create({trigger:'.wgrid',start:'top 91%',once:true,onEnter:function(){
-    gsap.from('.wcard',{opacity:0,y:16,duration:.45,stagger:.09,ease:'power2.out'});
-  }});
-
-  /* === CERTS SCALE UP === */
-  ScrollTrigger.create({trigger:'.certs',start:'top 91%',once:true,onEnter:function(){
-    gsap.from('.cert',{opacity:0,scale:.82,duration:.45,stagger:.08,ease:'back.out(1.5)'});
-  }});
-
-  /* === PRICING SLIDE === */
-  ScrollTrigger.create({trigger:'.pricing',start:'top 89%',once:true,onEnter:function(){
-    gsap.from('.pcard,.pcw',{opacity:0,y:24,duration:.55,stagger:.12,ease:'power3.out'});
-  }});
-
-  /* === VIDEOS POP === */
-  ScrollTrigger.create({trigger:'.vids-grid',start:'top 88%',once:true,onEnter:function(){
-    gsap.from('.vcw',{opacity:0,scale:.9,duration:.6,stagger:.15,ease:'back.out(1.3)'});
-  }});
-});
 (function(){var hdr=document.getElementById('stickyHdr');if(!hdr)return;window.addEventListener('scroll',function(){hdr.classList.toggle('show',window.scrollY>220);},{passive:true});})();
 (function(){var imgs=[].slice.call(document.querySelectorAll('#gallery .gcard img'));var lb=document.getElementById('lightbox');var lbImg=document.getElementById('lbImg');var lbDots=document.getElementById('lbDots');var lbIdx=0;if(!lb||!imgs.length)return;function renderDots(){lbDots.innerHTML=imgs.map(function(_,i){return '<button class="lb-dot'+(i===lbIdx?' active':'')+'"></button>';}).join('');[].forEach.call(lbDots.children,function(d,i){d.onclick=function(){lbGo(i);};});}function lbGo(i){lbIdx=(i+imgs.length)%imgs.length;lbImg.src=imgs[lbIdx].src;lbImg.alt=imgs[lbIdx].alt||'Foto';renderDots();}function lbOpen(i){lbGo(i);lb.classList.add('open');document.body.style.overflow='hidden';}function lbClose(){lb.classList.remove('open');document.body.style.overflow='';}imgs.forEach(function(img,i){img.closest('.gcard').onclick=function(){lbOpen(i);};});document.getElementById('lbClose').onclick=lbClose;document.getElementById('lbPrev').onclick=function(){lbGo(lbIdx-1);};document.getElementById('lbNext').onclick=function(){lbGo(lbIdx+1);};lb.onclick=function(e){if(e.target===lb)lbClose();};document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')lbClose();if(e.key==='ArrowLeft')lbGo(lbIdx-1);if(e.key==='ArrowRight')lbGo(lbIdx+1);});})();
 (function(){var pcards=[].slice.call(document.querySelectorAll('.pcard'));pcards.forEach(function(card){card.onclick=function(){pcards.forEach(function(c){c.classList.remove('selected');});card.classList.add('selected');var name=(card.querySelector('.p-tag')||{}).textContent||'';var price=((card.querySelector('.p-price')||{}).textContent||'').trim();var sfMsg=document.getElementById('sf-msg');if(sfMsg)sfMsg.value='Tenho interesse no pacote: '+name+' ('+price+')';var sched=document.querySelector('.sched-wrap');if(sched)sched.scrollIntoView({behavior:'smooth',block:'center'});};});})();
